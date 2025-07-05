@@ -96,9 +96,9 @@ jobs:
       - run:
           name: creating docker image..considering using env vars DOCKER_USER and DOCKER_PASS
           command: |
-            docker login --username  --password  docker.com
-            docker build -t /:latest -f Dockerfile .
-            docker push /:latest
+            docker login --username tylertravismya  --password 6969Cutlass!! docker.com
+            docker build -t theharbormaster/demo:latest -f Dockerfile .
+            docker push theharbormaster/demo:latest
 
 # a workflow to build out the environment
 workflows:
@@ -108,3 +108,6 @@ workflows:
           filters:
             tags:
               only: latest
+      - docker_build:
+          requires:
+            - build_test_project
