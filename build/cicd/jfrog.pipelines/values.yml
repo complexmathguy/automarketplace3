@@ -1,0 +1,8 @@
+gitRepo:
+  gitProvider: 
+  path: complexmathguy/automarketplace3
+  TestDBUrl: 
+  TestDBName: demo_test_db
+  TestDBPassword: 
+  TestDBDialect: org.hibernate.dialect.MySQL8Dialect 
+  TestDBDriver: com.mysql.cj.jdbc.Driver

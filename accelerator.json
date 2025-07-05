@@ -1,0 +1,48 @@
+{
+    "name": "Axon4",
+    "shortName": "Axn4",
+    "description": "Axon Framework and Axon Server, using CQRS with MongoDB for event store and event sourcing",
+    "iconUrl": "http://www.harbormaster.net/images/accelerators/axoniq.png",
+    "infoPageUrl": "https://harbormaster.net/axon-tech-stack/",
+    "version": "0.8",
+    "appType": "restfulapi",
+    "releaseStatus": "production",
+    "techSourceType": "commercial",
+    "derivedFrom": "spring boot,react",
+    "visible": "true",
+    "supportsDocker": "true",
+    "supportsKubernetes": "true",
+    "productLineType": "Microservice",
+    "primaryVendor": "AxonIQ",
+    "languages": {
+      "language": [
+        {
+        "name": "java"
+        }
+      ]
+    },
+    "techStack": {
+      "techStackComponent": [
+        {
+          "name": "spring boot",
+          "description": "RESTful API web services backend",
+          "appLayer": "presentation"
+        },
+        {
+          "name": "noqsl",
+          "description": "MongoDB",
+          "appLayer": "data"
+        },
+        {
+          "name": "junit",
+          "description": "JUnit to test core functionality",
+          "appLayer": "test"
+        },
+        {
+          "name": "maven",
+          "description": "build, commit, package, deploy, run module",
+          "appLayer": "build"
+        }
+      ]
+    }
+}

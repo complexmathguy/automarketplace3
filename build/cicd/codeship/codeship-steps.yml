@@ -1,0 +1,10 @@
+- service: demoService
+  name: Build Project demo
+  command: ./gitRoot/projectbuild.sh
+- service: adddocker
+  type: push
+  name: Docker Build and Push
+  image_name: realmethods/demo
+  image_tag: latest
+  registry: https://index.docker.io/v1/
+  encrypted_dockercfg_path: .dockercfg

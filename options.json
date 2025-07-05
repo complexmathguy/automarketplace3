@@ -1,0 +1,69 @@
+{
+  "name": "axon-framework",
+  "maxPerRow": "1",
+  "options": [
+    {
+      "name": "version",
+      "value": "4.4",
+      "required": "true",
+      "description": "Axon framework version",
+      "type": "input"
+    },
+    {
+      "name": "axonserver-token",
+      "value": "",
+      "required": "true",
+      "description": "Token used to securely communicate with an Axon Server",
+      "type": "input"
+    },
+    {
+      "name": "axonserver-context",
+      "value": "context1",
+      "required": "true",
+      "description": "Default Context",
+      "type": "input"
+    },
+    {
+      "name": "axonserver-servers",
+      "value": "localhost",
+      "required": "false",
+      "description": "location of Axon Server",
+      "type": "input"
+    },
+    {
+      "name": "spring-datasource-url",
+      "value": "jdbc:h2:./database;DB_CLOSE_ON_EXIT=FALSE;DB_CLOSE_DELAY=-1;AUTO_SERVER=TRUE",
+      "required": "true",
+      "description": "database URL",
+      "type": "input"
+    },
+    {
+      "name": "default-snapshot-threshold",
+      "value": "10",
+      "required": "true",
+      "description": "default aggregate snapshot threshold",
+      "type": "input"
+    },
+    {
+      "name": "use-axon-server",
+      "value": "true",
+      "required": "true",
+      "description": "",
+      "type": "checkbox"
+    },
+    {
+      "name": "enable-monitoring",
+      "value": "true",
+      "required": "true",
+      "description": "",
+      "type": "checkbox"
+    },
+    {
+      "name": "enable-tracing",
+      "value": "true",
+      "required": "true",
+      "description": "",
+      "type": "checkbox"
+    }
+  ]
+}
